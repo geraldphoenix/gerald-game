@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    
+
+
+title{ 
+    display: block;
+    background-color: rgb(238, 19, 19);
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(231, 231, 221);
+    padding-left: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    }
+
+
+
+.hero{
+    position: relative;
+    background-image: url('/banner.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ .welcome{
+    background-color: rgb(255, 187, 0);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+ }
+
+.content{
+    font-size: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    padding: 20px;
+    line-height: 40px;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(253, 248, 248);
+    position: sticky;
+    top: 60px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+
+.intro{
+    color: red;
+    font-size: 50px;
+}
+.de{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10%;
+    gap: 50px;
+}
+
+.sec img{
+    width: 40%;
+}
+
+.foot{
+    font-size: 30px;
+    color: gray;
+    
+}
+
+.ft{
+    padding: 20px;
+    text-align: center;
+    background-color: azure;
+}
+.sec img:hover{
+    padding-bottom: 10px;
+}
+
+.email{
+    margin-bottom: 10px;
+  
+}
+.fm{
+    margin-right:10px;
+}
+
+@media screen and (max-width: 1011px){
+    .welcome{
+        font-size: 20px;
+    } 
+    
+    .foot{
+        font-size: 20px;
+    }
+
+    .intro{
+        font-size: 40px;
+    }
+
+    .content{
+        font-size: 15px; 
+    }
+}
+
+@media screen and (max-width: 679px){
+
+    .welcome{
+        font-size: 15px;
+    } 
+    
+    .foot{
+        font-size: 15px;
+    }
+
+    .intro{
+        font-size: 30px;
+    }
+
+    .content{
+        font-size: 13px;
+        line-height: 20px; 
+    }
+    .ld{
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 450px){
+    .nav, .sec{
+        flex-direction: column;
+    }
+    .content{
+        column-count: 1;
+        padding-top: 0;
+    }
+
+    .sec img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
